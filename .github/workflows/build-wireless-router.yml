@@ -551,11 +551,7 @@ jobs:
       - name: Enable Store integration
         run: |
           if [ "${{ github.event.inputs.enable_store }}" == "true" ]; then
-            # echo 'CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-store"' >> shell/custom-packages.sh
-              echo >> feeds.conf.default
-              echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
-                    ./scripts/feeds update istore
-                    ./scripts/feeds install -d y -p istore luci-app-store
+            echo 'CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-store"' >> shell/custom-packages.sh
             echo "✅ 已追加 luci-app-store"
           else
             echo "❎ 未启用 luci-app-store"

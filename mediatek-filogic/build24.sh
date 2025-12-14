@@ -60,6 +60,21 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 # 静态文件服务器dufs(推荐)
 PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
+#USB驱动
+PACKAGES="$PACKAGES kmod-mii"
+PACKAGES="$PACKAGES kmod-usb-net-rndis"
+PACKAGES="$PACKAGES kmod-usb-net-ipheth"
+PACKAGES="$PACKAGES kmod-usb-net-cdc-ether"
+PACKAGES="$PACKAGES kmod-usb-net-cdc-mbim"
+PACKAGES="$PACKAGES kmod-usb-net-cdc-ncm"
+PACKAGES="$PACKAGES kmod-usb-net-cdc-eem"
+PACKAGES="$PACKAGES kmod-usb-net-huawei-cdc-ncm"
+PACKAGES="$PACKAGES kmod-usb-net-qmi-wwan"
+PACKAGES="$PACKAGES usb-modeswitch"
+#hysteria
+PACKAGES="$PACKAGES hysteria"
+# 网络共享
+PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
 # 第三方软件包 合并
 # ======== shell/custom-packages.sh =======
